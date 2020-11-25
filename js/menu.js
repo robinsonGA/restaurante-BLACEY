@@ -2,50 +2,65 @@ $(document).ready(function() {
   var desayunos = $("#btn-desayunos");
   var postres = $("#btn-postres");
   var ensaladas = $("#btn-ensaladas");
-  var botanasBebidas = $("#btn-botanasBebidas");
+  var botanasAntojitos = $("#btn-botanasAntojitos");
   var comidas = $("#btn-comidas");
+  var bebidas = $("#btn-bebidas");
 
   var cajaDesayunos = $("#desayunos");
   var cajaPostre = $("#postres");
   var cajaEnsaladas = $("#ensaladas");
-  var cajaBotanasBebidas = $("#botanasBebidas");
+  var cajaBotanasAntojitos = $("#botanasAntojitos");
   var cajaComidas = $("#comidas");
+  var cajaBebidas = $("#bedidas");
 
   desayunos.click(function() {
     cajaPostre.hide();
     cajaEnsaladas.hide();
-    cajaBotanasBebidas.hide();
+    cajaBotanasAntojitos.hide();
     cajaComidas.hide();
+    cajaBebidas.hide();
     cajaDesayunos.toggle(1000);
   });
   postres.click(function() {
     cajaDesayunos.hide();
     cajaEnsaladas.hide();
-    cajaBotanasBebidas.hide();
+    cajaBotanasAntojitos.hide();
     cajaComidas.hide();
+    cajaBebidas.hide();
     cajaPostre.toggle(1000);
   });
   ensaladas.click(function() {
     cajaDesayunos.hide();
     cajaPostre.hide();
-    cajaBotanasBebidas.hide();
+    cajaBotanasAntojitos.hide();
     cajaComidas.hide();
+    cajaBebidas.hide();
     cajaEnsaladas.toggle(1000);
   });
-  botanasBebidas.click(function() {
+  botanasAntojitos.click(function() {
     cajaDesayunos.hide();
     cajaEnsaladas.hide();
     cajaPostre.hide();
     cajaComidas.hide();
-    cajaBotanasBebidas.toggle(1000);
+    cajaBebidas.hide();
+    cajaBotanasAntojitos.toggle(1000);
   });
 
   comidas.click(function() {
     cajaDesayunos.hide();
     cajaEnsaladas.hide();
     cajaPostre.hide();
-    cajaBotanasBebidas.hide();
+    cajaBotanasAntojitos.hide();
+    cajaBebidas.hide();
     cajaComidas.toggle(1000);
+  });
+  bebidas.click(function() {
+    cajaDesayunos.hide();
+    cajaEnsaladas.hide();
+    cajaPostre.hide();
+    cajaBotanasAntojitos.hide();
+    cajaComidas.hide();
+    cajaBebidas.toggle(1000);
   });
 });
 
